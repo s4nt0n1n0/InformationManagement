@@ -2,9 +2,13 @@
     Private Sub AdminBot_Click(sender As Object, e As EventArgs) Handles AdminBot.Click
         ' Show the Admin login form
         Dim adminForm As New Adminlogin()
-        adminForm.Show()
 
-        ' Hide the current form
+        ' Match the current Login form's state and size
+        adminForm.WindowState = Me.WindowState
+        adminForm.Size = Me.Size
+        adminForm.Location = Me.Location
+
+        adminForm.Show()
         Me.Hide()
     End Sub
 
