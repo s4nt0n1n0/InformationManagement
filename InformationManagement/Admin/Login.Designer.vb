@@ -47,6 +47,7 @@ Partial Class Login
         '
         'PictureBox1
         '
+        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
@@ -110,6 +111,7 @@ Partial Class Login
         '
         'Panel1
         '
+        Me.Panel1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel1.BackColor = System.Drawing.Color.Beige
         Me.Panel1.Controls.Add(Me.AdminBot)
         Me.Panel1.Controls.Add(Me.Staff1)

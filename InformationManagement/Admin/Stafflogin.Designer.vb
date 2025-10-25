@@ -59,6 +59,8 @@ Partial Class Stafflogin
         '
         'Panel1
         '
+        Me.Panel1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Panel1.AutoSize = True
         Me.Panel1.BackColor = System.Drawing.Color.Bisque
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Panel1.Controls.Add(Me.stafflog)
@@ -151,6 +153,7 @@ Partial Class Stafflogin
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
