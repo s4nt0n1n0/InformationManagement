@@ -22,6 +22,7 @@ Partial Class Stafflogin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Stafflogin))
         Me.Splitter1 = New System.Windows.Forms.Splitter()
         Me.Back2 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -36,17 +37,17 @@ Partial Class Stafflogin
         '
         'Splitter1
         '
-        Me.Splitter1.BackColor = System.Drawing.Color.Red
+        Me.Splitter1.BackColor = System.Drawing.Color.Maroon
         Me.Splitter1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Splitter1.Location = New System.Drawing.Point(0, 0)
         Me.Splitter1.Name = "Splitter1"
-        Me.Splitter1.Size = New System.Drawing.Size(800, 56)
+        Me.Splitter1.Size = New System.Drawing.Size(800, 54)
         Me.Splitter1.TabIndex = 0
         Me.Splitter1.TabStop = False
         '
         'Back2
         '
-        Me.Back2.BackColor = System.Drawing.Color.Bisque
+        Me.Back2.BackColor = System.Drawing.Color.White
         Me.Back2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Back2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Back2.ForeColor = System.Drawing.Color.Red
@@ -61,7 +62,7 @@ Partial Class Stafflogin
         '
         Me.Panel1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel1.AutoSize = True
-        Me.Panel1.BackColor = System.Drawing.Color.Bisque
+        Me.Panel1.BackColor = System.Drawing.Color.Maroon
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Panel1.Controls.Add(Me.stafflog)
         Me.Panel1.Controls.Add(Me.Label1)
@@ -76,10 +77,10 @@ Partial Class Stafflogin
         '
         'stafflog
         '
-        Me.stafflog.BackColor = System.Drawing.Color.Red
+        Me.stafflog.BackColor = System.Drawing.Color.White
         Me.stafflog.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.stafflog.Font = New System.Drawing.Font("Microsoft New Tai Lue", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.stafflog.ForeColor = System.Drawing.Color.White
+        Me.stafflog.ForeColor = System.Drawing.Color.Red
         Me.stafflog.Location = New System.Drawing.Point(88, 204)
         Me.stafflog.Name = "stafflog"
         Me.stafflog.Size = New System.Drawing.Size(131, 32)
@@ -90,13 +91,13 @@ Partial Class Stafflogin
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Red
+        Me.Label1.BackColor = System.Drawing.Color.Maroon
         Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label1.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label1.Location = New System.Drawing.Point(116, 10)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(67, 36)
+        Me.Label1.Size = New System.Drawing.Size(57, 25)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Staff"
         '
@@ -120,7 +121,7 @@ Partial Class Stafflogin
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft New Tai Lue", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.DarkRed
+        Me.Label2.ForeColor = System.Drawing.Color.Transparent
         Me.Label2.Location = New System.Drawing.Point(24, 53)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(49, 30)
@@ -131,7 +132,7 @@ Partial Class Stafflogin
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft New Tai Lue", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.Maroon
+        Me.Label3.ForeColor = System.Drawing.Color.Transparent
         Me.Label3.Location = New System.Drawing.Point(24, 125)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(126, 30)
@@ -142,7 +143,9 @@ Partial Class Stafflogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.PeachPuff
+        Me.BackColor = System.Drawing.Color.Snow
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Back2)

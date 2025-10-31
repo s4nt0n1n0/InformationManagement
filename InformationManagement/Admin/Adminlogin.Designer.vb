@@ -22,6 +22,7 @@ Partial Class Adminlogin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Adminlogin))
         Me.Splitter1 = New System.Windows.Forms.Splitter()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -36,7 +37,7 @@ Partial Class Adminlogin
         '
         'Splitter1
         '
-        Me.Splitter1.BackColor = System.Drawing.Color.Red
+        Me.Splitter1.BackColor = System.Drawing.Color.Maroon
         Me.Splitter1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Splitter1.Location = New System.Drawing.Point(0, 0)
         Me.Splitter1.Name = "Splitter1"
@@ -47,13 +48,13 @@ Partial Class Adminlogin
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Red
+        Me.Label1.BackColor = System.Drawing.Color.Maroon
         Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label1.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label1.Location = New System.Drawing.Point(111, 11)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(86, 36)
+        Me.Label1.Size = New System.Drawing.Size(73, 25)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Admin"
         '
@@ -77,7 +78,7 @@ Partial Class Adminlogin
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft New Tai Lue", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.DarkRed
+        Me.Label2.ForeColor = System.Drawing.Color.Transparent
         Me.Label2.Location = New System.Drawing.Point(24, 53)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(49, 30)
@@ -88,7 +89,7 @@ Partial Class Adminlogin
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft New Tai Lue", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.Maroon
+        Me.Label3.ForeColor = System.Drawing.Color.Transparent
         Me.Label3.Location = New System.Drawing.Point(24, 125)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(126, 30)
@@ -98,7 +99,7 @@ Partial Class Adminlogin
         'Panel1
         '
         Me.Panel1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Panel1.BackColor = System.Drawing.Color.Bisque
+        Me.Panel1.BackColor = System.Drawing.Color.Maroon
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Panel1.Controls.Add(Me.adminlog)
         Me.Panel1.Controls.Add(Me.Label1)
@@ -113,10 +114,10 @@ Partial Class Adminlogin
         '
         'adminlog
         '
-        Me.adminlog.BackColor = System.Drawing.Color.Red
+        Me.adminlog.BackColor = System.Drawing.Color.White
         Me.adminlog.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.adminlog.Font = New System.Drawing.Font("Microsoft New Tai Lue", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.adminlog.ForeColor = System.Drawing.Color.White
+        Me.adminlog.ForeColor = System.Drawing.Color.Red
         Me.adminlog.Location = New System.Drawing.Point(88, 204)
         Me.adminlog.Name = "adminlog"
         Me.adminlog.Size = New System.Drawing.Size(131, 32)
@@ -126,7 +127,7 @@ Partial Class Adminlogin
         '
         'Back1
         '
-        Me.Back1.BackColor = System.Drawing.Color.Bisque
+        Me.Back1.BackColor = System.Drawing.Color.White
         Me.Back1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Back1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Back1.ForeColor = System.Drawing.Color.Red
@@ -141,7 +142,9 @@ Partial Class Adminlogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.PeachPuff
+        Me.BackColor = System.Drawing.Color.White
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Back1)
         Me.Controls.Add(Me.Panel1)
