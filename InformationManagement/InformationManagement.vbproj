@@ -87,6 +87,12 @@
     <Compile Include="Admin\CotumerHistory.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Admin\EmployeeAttendance.Designer.vb">
+      <DependentUpon>EmployeeAttendance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EmployeeAttendance.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Admin\TakeoutOrders.Designer.vb">
       <DependentUpon>TakeoutOrders.vb</DependentUpon>
     </Compile>
@@ -146,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Dine-inOrders.resx">
       <DependentUpon>Dine-inOrders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\EmployeeAttendance.resx">
+      <DependentUpon>EmployeeAttendance.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\TakeoutOrders.resx">
       <DependentUpon>TakeoutOrders.vb</DependentUpon>
